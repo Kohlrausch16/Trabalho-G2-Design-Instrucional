@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -52,3 +53,9 @@ export default tseslint.config({
   },
 })
 ```
+=======
+## Trabalho-G2-Design-Instrucional
+Jogo para auxílio de aprendizagem de matemática. 
+
+Link design-figma: https://www.figma.com/design/uMxNXjBXnevnNwiiPcA4Pz/Trabalho---G2--Design-Instrucional?node-id=0-1&p=f&t=Bbsro5ZlEoaZmYAg-0
+>>>>>>> 1bdb7a354b27f0e5afd3569210e57075389a5b2d
