@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+interface GeneralDataProps{
+    fontSize: number;
+}
+
 export const MainContainer = styled.div`
     display: flex;
     justify-content: center;
@@ -12,6 +16,7 @@ export const MainContainer = styled.div`
 
 export const PhoneContainer = styled.div`
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -26,4 +31,20 @@ export const PhoneContainer = styled.div`
         max-height: 750px;
         border-radius: 15px;
     }
+`;
+
+export const TitleContainer = styled.div<GeneralDataProps>`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+    font-size: ${props => `${props.fontSize}dvh`}
+    
+`;
+
+export const Title = styled.h1`
+    font-family: 'Montserrat';
+    font-weight: normal;
+    color:rgba(118, 56, 173, 0.73);
 `;
