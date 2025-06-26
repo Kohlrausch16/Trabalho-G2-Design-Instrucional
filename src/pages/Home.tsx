@@ -1,4 +1,5 @@
 import { MainContainer, PhoneContainer } from "../GeneralStyle";
+import ProgressBar from "../layouts/ProgressBar";
 import { HomeArea, SquareShapeContainer, TitleContainer, HomeTitle, HomeSquareShape, StartButton } from "./HomeStyle";
 
 const Home = () =>{
@@ -8,6 +9,7 @@ const Home = () =>{
         <MainContainer>
             <PhoneContainer>
                 <HomeArea>
+                    <ProgressBar />
                     <TitleContainer>
                         <HomeTitle>NOME DO JOGO</HomeTitle>
                     </TitleContainer>
