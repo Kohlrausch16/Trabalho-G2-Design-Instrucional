@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 import { MainContainer, PhoneContainer } from "../GeneralStyle";
 import ProgressBar from "../layouts/ProgressBar";
 import { HomeArea, SquareShapeContainer, TitleContainer, HomeTitle, HomeSquareShape, StartButton } from "./HomeStyle";
-import { Link } from "react-router-dom";
+
 
 const Home = () =>{
 
@@ -20,9 +21,7 @@ const Home = () =>{
                         <HomeSquareShape height={65} />
                         <HomeSquareShape height={58} /> 
                         <HomeSquareShape height={51} />
-                        <Link to="/level-selector">
-                            <StartButton> Start! </StartButton>
-                        </Link>
+                        <StartButton href="/level-selector">Start!</StartButton>
                     </SquareShapeContainer>
                 </HomeArea>
             </PhoneContainer>

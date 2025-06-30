@@ -46,5 +46,5 @@ export const TitleContainer = styled.div<GeneralDataProps>`
 export const Title = styled.h1`
     font-family: 'Montserrat';
     font-weight: normal;
-    color:rgba(118, 56, 173, 0.73);
+    color:hsla(272, 51.10%, 44.90%, 0.73);
 `;

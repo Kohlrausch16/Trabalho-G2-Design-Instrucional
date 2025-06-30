@@ -43,7 +43,7 @@ export const HomeTitle = styled.h1`
     color:rgba(118, 56, 173, 0.73);
 `;
 
-export const StartButton = styled.div`
+export const StartButton = styled.a`
     position: absolute;
     z-index: 2;
     align-self: flex-end;
@@ -57,10 +57,11 @@ export const StartButton = styled.div`
     color:rgba(118, 56, 173, 0.73);
     font-family: 'Montserrat';
     font-weight: normal;
-    transition: 0.5s;
+    transition: transform 0.5s;
+    text-decotarion: none;
 
     &:hover{
-        transform: scale(1.05);
         cursor: pointer;
+        transform: scale(1.02);
     }
 `;

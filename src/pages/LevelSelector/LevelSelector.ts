@@ -17,7 +17,7 @@ export const LevelSelectorContainer = styled.div`
   scrollbar-width: none;
 `;
 
-export const LevelSelectorCard = styled.div<LevelCardProps>`
+export const LevelSelectorCard = styled.a<LevelCardProps>`
   position: relative;
   display: flex;
   align-self: flex-start;
@@ -26,6 +26,7 @@ export const LevelSelectorCard = styled.div<LevelCardProps>`
   width: 96%;
   height: 20%;
   border-radius: 10px;
+  text-decoration: none;
   border: solid 1px ${props => props.borderColor};
   transition: transform 0.5s;
 

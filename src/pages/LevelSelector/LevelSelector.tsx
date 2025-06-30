@@ -1,6 +1,7 @@
 import { MainContainer, PhoneContainer, TitleContainer, Title } from "../../GeneralStyle";
 import { LevelSelectorCard, LevelSelectorContainer, GradientSection, CardTitle, CardImage } from "./LevelSelector";
 import foto from '../../assets/images/bom_de_guera.png';
+import '../../main.css';
 
 const LevelSelector = () =>{
 
@@ -13,11 +14,12 @@ const LevelSelector = () =>{
         </TitleContainer>
 
         <LevelSelectorContainer>
-          <LevelSelectorCard borderColor="#CCCCCC">
-            <CardImage src={foto}/>
-            <GradientSection />
-            <CardTitle>Grécia</CardTitle>
-          </LevelSelectorCard>
+            <LevelSelectorCard href="/question" borderColor="hsla(272, 51.10%, 44.90%, 0.73)">
+              <CardImage src={foto}/>
+              <GradientSection />
+              <CardTitle>Grécia</CardTitle>
+            </LevelSelectorCard>
+
         </LevelSelectorContainer>
 
       </PhoneContainer>
