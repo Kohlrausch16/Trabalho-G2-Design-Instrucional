@@ -1,5 +1,6 @@
 import { MainContainer, PhoneContainer, TitleContainer, Title } from "../../GeneralStyle";
-import { LevelSelectorCard, LevelSelectorContainer, GradientSection, CardTitle } from "./LevelSelector";
+import { LevelSelectorCard, LevelSelectorContainer, GradientSection, CardTitle, CardImage } from "./LevelSelector";
+import foto from '../../assets/images/bom_de_guera.png';
 
 const LevelSelector = () =>{
 
@@ -12,13 +13,11 @@ const LevelSelector = () =>{
         </TitleContainer>
 
         <LevelSelectorContainer>
-          <LevelSelectorCard borderColor="blue">
+          <LevelSelectorCard borderColor="#CCCCCC">
+            <CardImage src={foto}/>
             <GradientSection />
-            <CardTitle> Mesopotâmia </CardTitle>
-
+            <CardTitle>Grécia</CardTitle>
           </LevelSelectorCard>
-          <LevelSelectorCard borderColor="green"> Test </LevelSelectorCard>
-
         </LevelSelectorContainer>
 
       </PhoneContainer>

@@ -22,7 +22,7 @@ export const PhoneContainer = styled.div`
     width: 100%;
     height: 100%;
     align-self: center;
-    background-color:rgb(232, 232, 233);
+    background-color: #e8e8e9;
     box-shadow:rgb(105, 104, 104) 5px 5px 10px;
     
     @media(min-width: 1000px){

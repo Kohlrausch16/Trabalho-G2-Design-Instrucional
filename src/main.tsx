@@ -4,7 +4,7 @@ import { createRoot } from 'react-dom/client'
 import Home from './pages/Home/Home';
 import PageNotFound from './pages/PageNotFound';
 import "./main.css";
-import LevelSelector from './pages/LevelSelector/LevelSelector';
+import LevelSelector from './pages/LevelSelector/LevelSelector.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

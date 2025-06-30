@@ -43,7 +43,7 @@ export const HomeTitle = styled.h1`
     color:rgba(118, 56, 173, 0.73);
 `;
 
-export const StartButton = styled.button`
+export const StartButton = styled.div`
     position: absolute;
     z-index: 2;
     align-self: flex-end;
@@ -61,5 +61,6 @@ export const StartButton = styled.button`
 
     &:hover{
         transform: scale(1.05);
+        cursor: pointer;
     }
 `;

@@ -26,12 +26,12 @@ export const LevelSelectorCard = styled.div<LevelCardProps>`
   width: 96%;
   height: 20%;
   border-radius: 10px;
-  border: solid 2px ${props => props.borderColor};
+  border: solid 1px ${props => props.borderColor};
   transition: transform 0.5s;
 
   &:hover{
     cursor: pointer;
-    transform: translateY(-3%);
+    transform: scale(1.01);
   }
 `;
 
@@ -40,14 +40,19 @@ export const GradientSection = styled.div`
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-image: linear-gradient(to right, transparent 0%, rgb(227, 175, 172, 0.7) 50%);
+  background-image: linear-gradient(to right, transparent 0%, #e8e8e9 60%);
 `;
 
 export const CardTitle = styled.h1`
-  position: absolute;
   z-index: 10;
   font-family: 'Montserrat';
   font-weight: normal;
   color:rgba(118, 56, 173, 0.73);
   font-size: 3dvh;
+  transform: translateX(50%);
+`;
+
+export const CardImage = styled.img`
+  align-self: flex-start;  
+  height: 100%;
 `;
