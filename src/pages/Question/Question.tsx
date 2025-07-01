@@ -11,6 +11,8 @@ const Question = () => {
         correctIndex: number;
     }
 
+    const progressCombination = [false, false, false, false, false];
+    
     const options: Options[] = [
         {
             questionText: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum reprehenderit libero sunt ratione nobis tenetur debitis voluptatum ullam sapiente consequuntur nemo minus sint, corrupti, sed, cum in tempora omnis eveniet.',
@@ -27,7 +29,7 @@ const Question = () => {
                 <QuestionContainer>
                     <PageHeader>
                         <HelpIcon />
-                        <ProgressBar progress={0}/>
+                        <ProgressBar progressBar={progressCombination}/>
                     </PageHeader>
 
                    <ContentContainer>
