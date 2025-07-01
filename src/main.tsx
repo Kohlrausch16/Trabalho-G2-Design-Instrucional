@@ -5,6 +5,7 @@ import Home from './pages/Home/Home';
 import PageNotFound from './pages/PageNotFound';
 import "./main.css";
 import LevelSelector from './pages/LevelSelector/LevelSelector.tsx';
+import Story from './pages/Story/Story.tsx';
 import Question from './pages/Question/Question.tsx';
 
 createRoot(document.getElementById('root')!).render(
@@ -13,6 +14,7 @@ createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/level-selector" element={<LevelSelector />}></Route>
+        <Route path="/story" element={<Story />}></Route>
         <Route path="/question" element={<Question />}></Route>
         <Route path="*" element={<PageNotFound />}></Route>
       </Routes>
