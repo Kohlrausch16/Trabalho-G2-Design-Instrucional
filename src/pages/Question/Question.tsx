@@ -31,12 +31,12 @@ const Question = () =>{
                             {storyContent[index].pageText}
                         </TextSection>
                     </TextContainer>
-                    {index}
+                
                     <ButtonContainer>
-                    <Button active={(index == 0)? false : true} onClick={() => setIndexValue(index - 1)}>
+                    <Button active={(index == 0)? false : true} disabled={(index == 0)? true : false} onClick={() => setIndexValue(index - 1)}>
                         Back
                     </Button>
-                    <Button active={(index == storyContent.length - 1)? false : true} onClick={() => setIndexValue(index + 1)}>
+                    <Button active={(index == storyContent.length - 1)? false : true} disabled={(index == storyContent.length - 1)? true : false} onClick={() => setIndexValue(index + 1)}>
                         Next
                     </Button>
                     </ButtonContainer>

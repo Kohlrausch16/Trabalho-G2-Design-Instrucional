@@ -16,7 +16,9 @@ export const QuestionArea = styled.div`
 export const TextContainer = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center;
     flex: 4;
+    background-image: linear-gradient(to bottom, rgba(118, 56, 173, 0.73) 0%, transparent 40%);
 `;
 
 export const TextSection = styled.div`
@@ -25,11 +27,11 @@ export const TextSection = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
+    width: 80%;
     height: 35%;
     font-family: 'Montserrat';
     font-weight: normal;
-    background-image: linear-gradient(to bottom, rgba(118, 56, 173, 0.73) 0%, transparent 100%);
+    
     font-size: 0.7dvw;
     color: white;
 `;
@@ -43,7 +45,7 @@ export const ButtonContainer = styled.div`
     flex: 1;
 `;
 
-export const Button = styled.a<ButtonActionProps>`
+export const Button = styled.button<ButtonActionProps>`
     display: flex;
     width: 20%;
     height: 40%;
