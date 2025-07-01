@@ -1,11 +1,10 @@
-import { ProgressBarContainer, ProgressBarFragment } from "./ProgressBar.Style";
+import { ProgressBarContainer, ProgressBarFragment } from "./Components";
 
-const ProgressBar = () =>{
+const ProgressBar = (progress: progress) =>{
 
     type ProgressBar = {
         bkgColor: boolean;    
     }
-
 
     const progressBarFragmentsStatus: ProgressBar[] = [
         {

@@ -31,7 +31,6 @@ export const TextSection = styled.div`
     height: 35%;
     font-family: 'Montserrat';
     font-weight: normal;
-    
     font-size: 0.7dvw;
     color: white;
 `;
