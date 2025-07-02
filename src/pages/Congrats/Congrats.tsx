@@ -1,5 +1,4 @@
 import { MainContainer, PhoneContainer } from "../../GeneralStyle";
-import { Button, ButtonContainer } from "../Question/QuestionStyle";
 import { CongratsContainer } from "./CongratsStyle";
 
 const Congrats = () =>{
@@ -9,9 +8,7 @@ const Congrats = () =>{
             <PhoneContainer>
                 <CongratsContainer>
                     Parabéns!
-                    <ButtonContainer>
-                        <Button> Retornar ao menu</Button>
-                    </ButtonContainer>
+                    
                 </CongratsContainer>
             </PhoneContainer>
         </MainContainer>
@@ -21,3 +18,9 @@ const Congrats = () =>{
 }
 
 export default Congrats;
+
+/*
+<ButtonContainer>
+    <Button> Retornar ao menu</Button>
+</ButtonContainer>
+*/

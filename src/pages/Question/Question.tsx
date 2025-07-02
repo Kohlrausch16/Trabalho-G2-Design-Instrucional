@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { MainContainer, PhoneContainer } from "../../GeneralStyle"
 import HelpIcon from "../../layouts/HelpIcon";
 import ProgressBar from "../../layouts/ProgressBar";
@@ -11,16 +12,35 @@ const Question = () => {
         correctIndex: number;
     }
 
-    const progressCombination = [false, false, false, false, false];
-    
+    const [optionsIndex, setOptionsIndex] = useState(0);
+
     const options: Options[] = [
         {
-            questionText: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum reprehenderit libero sunt ratione nobis tenetur debitis voluptatum ullam sapiente consequuntur nemo minus sint, corrupti, sed, cum in tempora omnis eveniet.',
+            questionText: '1 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum reprehenderit libero sunt ratione nobis tenetur debitis voluptatum ullam sapiente consequuntur nemo minus sint, corrupti, sed, cum in tempora omnis eveniet.',
             questionOptions: ['A', 'B', 'C', 'D'],
             correctIndex: 2
+        },
+        {
+            questionText: '2 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum reprehenderit libero sunt ratione nobis tenetur debitis voluptatum ullam sapiente consequuntur nemo minus sint, corrupti, sed, cum in tempora omnis eveniet.',
+            questionOptions: ['A', 'B', 'C', 'D'],
+            correctIndex: 4
+        },
+        {
+            questionText: '3 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum reprehenderit libero sunt ratione nobis tenetur debitis voluptatum ullam sapiente consequuntur nemo minus sint, corrupti, sed, cum in tempora omnis eveniet.',
+            questionOptions: ['A', 'B', 'C', 'D'],
+            correctIndex: 1
+        },
+        {
+            questionText: '4 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum reprehenderit libero sunt ratione nobis tenetur debitis voluptatum ullam sapiente consequuntur nemo minus sint, corrupti, sed, cum in tempora omnis eveniet.',
+            questionOptions: ['A', 'B', 'C', 'D'],
+            correctIndex: 1
+        },
+        {
+            questionText: '5 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum reprehenderit libero sunt ratione nobis tenetur debitis voluptatum ullam sapiente consequuntur nemo minus sint, corrupti, sed, cum in tempora omnis eveniet.',
+            questionOptions: ['A', 'B', 'C', 'D'],
+            correctIndex: 3
         }
     ]
-
 
     return(
     <>
@@ -29,17 +49,17 @@ const Question = () => {
                 <QuestionContainer>
                     <PageHeader>
                         <HelpIcon />
-                        <ProgressBar progressBar={progressCombination}/>
+                        <ProgressBar progressBar={optionsIndex}/>
                     </PageHeader>
 
                    <ContentContainer>
-                        {options[0].questionText}
+                        {options[optionsIndex].questionText}
                    </ContentContainer>
 
                    <OptionsContainer>
                         
-                        {options[0].questionOptions.map((item: string) => {
-                            return <OptionSelector> {item} </OptionSelector>       
+                        {options[optionsIndex].questionOptions.map((item: string) => {
+                            return <OptionSelector onClick={() => setOptionsIndex(optionsIndex + 1)} > {item} </OptionSelector>       
                         })}
                         
                    </OptionsContainer>

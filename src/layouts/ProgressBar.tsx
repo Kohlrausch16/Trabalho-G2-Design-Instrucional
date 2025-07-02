@@ -10,14 +10,18 @@ type FragmentIndex = {
 
 const ProgressBar = ({progressBar}: FragmentIndex) =>{
 
+    const options: boolean[] = [false, false, false, false, false];
+
+    for(let i = 0; i <= progressBar; i++){
+        options[i] = true;
+    }
+    
     return(
     <>
         <ProgressBarContainer> 
-
-            {progressBar.map((item: ProgressBar, index: number) => {
-                return <ProgressBarFragment indexOf={index} bkgColor={item.bkgColor}/>    
-            })}
-            
+            {options.map((item: boolean, index: number) => {
+                return <ProgressBarFragment indexOf={index} bkgColor={item} />
+            })}            
         </ProgressBarContainer>
     </>
     );
