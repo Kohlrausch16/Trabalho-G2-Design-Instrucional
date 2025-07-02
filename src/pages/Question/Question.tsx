@@ -12,8 +12,6 @@ const Question = () => {
         correctIndex: number;
     }
 
-    const [optionsIndex, setOptionsIndex] = useState(0);
-
     const options: Options[] = [
         {
             questionText: '1 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum reprehenderit libero sunt ratione nobis tenetur debitis voluptatum ullam sapiente consequuntur nemo minus sint, corrupti, sed, cum in tempora omnis eveniet.',
@@ -38,9 +36,19 @@ const Question = () => {
         {
             questionText: '5 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum reprehenderit libero sunt ratione nobis tenetur debitis voluptatum ullam sapiente consequuntur nemo minus sint, corrupti, sed, cum in tempora omnis eveniet.',
             questionOptions: ['A', 'B', 'C', 'D'],
-            correctIndex: 3
+            correctIndex: 3,
         }
-    ]
+    ];
+
+    const [optionsIndex, setOptionsIndex] = useState(0);
+
+    function verifyAnswer(index: number){
+        if(options[optionsIndex].correctIndex == (index + 1)){
+            setOptionsIndex(optionsIndex + 1);
+        } else {
+            alert('Resposta errada :(; Sequência: B - A - D - D - C');
+        }
+    }
 
     return(
     <>
@@ -58,8 +66,8 @@ const Question = () => {
 
                    <OptionsContainer>
                         
-                        {options[optionsIndex].questionOptions.map((item: string) => {
-                            return <OptionSelector onClick={() => setOptionsIndex(optionsIndex + 1)} > {item} </OptionSelector>       
+                        {options[optionsIndex].questionOptions.map((item: string, index: number) => {
+                            return <OptionSelector onClick={() => verifyAnswer(index)} > {item} </OptionSelector>       
                         })}
                         
                    </OptionsContainer>

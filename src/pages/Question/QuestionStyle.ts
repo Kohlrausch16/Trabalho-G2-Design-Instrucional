@@ -39,7 +39,7 @@ export const OptionsContainer = styled.div`
     gap: 5px;
 `;
 
-export const OptionSelector = styled.div`
+export const OptionSelector = styled.a`
     grid: 1;
     display: flex;
     justify-content: center;
