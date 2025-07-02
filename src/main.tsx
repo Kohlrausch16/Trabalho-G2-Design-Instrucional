@@ -6,6 +6,7 @@ import PageNotFound from './pages/PageNotFound';
 import "./main.css";
 import LevelSelector from './pages/LevelSelector/LevelSelector.tsx';
 import Question from './pages/Question/Question.tsx';
+import Congrats from './pages/Congrats/Congrats.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -14,6 +15,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/" element={<Home />}></Route>
         <Route path="/level-selector" element={<LevelSelector />}></Route>
         <Route path="/question" element={<Question />}></Route>
+        <Route path="/congrats" element={<Congrats/>}></Route>
         <Route path="*" element={<PageNotFound />}></Route>
       </Routes>
     </Router>

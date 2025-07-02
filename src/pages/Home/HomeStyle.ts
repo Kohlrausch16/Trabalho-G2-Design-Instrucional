@@ -29,9 +29,13 @@ export const HomeSquareShape = styled.div<SquareProps>`
     border-radius: 15px;
 `;
 
-export const StartButton = styled.button`
+export const ButtonContainer = styled.a`
     position: absolute;
     z-index: 2;
+    
+`;
+
+export const StartButton = styled.button`
     align-self: flex-end;
     width: 40%;
     margin-left: 30%;
@@ -46,6 +50,7 @@ export const StartButton = styled.button`
     transition: 0.5s;
 
     &:hover{
+        cursor: pointer;
         transform: scale(1.05);
     }
 `;

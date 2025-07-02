@@ -1,5 +1,5 @@
 import { MainContainer, PhoneContainer, TitleContainer, Title } from "../../GeneralStyle";
-import { HomeArea, SquareShapeContainer, HomeSquareShape, StartButton } from "./HomeStyle";
+import { HomeArea, SquareShapeContainer, HomeSquareShape, StartButton, ButtonContainer } from "./HomeStyle";
 
 const Home = () =>{
 
@@ -17,7 +17,9 @@ const Home = () =>{
                         <HomeSquareShape height={65} />
                         <HomeSquareShape height={58} />
                         <HomeSquareShape height={51} />
-                        <StartButton> Start! </StartButton>
+                        <ButtonContainer href="/level-selector">
+                            <StartButton>Start!</StartButton>
+                        </ButtonContainer>
                     </SquareShapeContainer>
                 </HomeArea>
             </PhoneContainer>

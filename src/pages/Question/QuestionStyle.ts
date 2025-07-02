@@ -34,7 +34,7 @@ export const TextSection = styled.div`
     color: white;
 `;
 
-export const ButtonContainer = styled.div`
+export const ButtonContainer = styled.a`
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -43,7 +43,7 @@ export const ButtonContainer = styled.div`
     flex: 1;
 `;
 
-export const Button = styled.a<ButtonActionProps>`
+export const Button = styled.button<ButtonActionProps>`
     display: flex;
     width: 20%;
     height: 40%;

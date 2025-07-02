@@ -10,7 +10,6 @@ export const MainContainer = styled.div`
     align-items: center;
     width: 100dvw;
     height: 100dvh;
-    padding: 0% 0%;
     background-image: linear-gradient(to bottom,hsl(253, 56.20%, 93.70%), #D6CCF2, #B9AEE0);
 `;
 
