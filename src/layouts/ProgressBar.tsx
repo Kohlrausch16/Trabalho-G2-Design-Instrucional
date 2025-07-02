@@ -1,35 +1,20 @@
-import { ProgressBarContainer, ProgressBarFragment } from "./ProgressBar.Style";
+import { ProgressBarContainer, ProgressBarFragment } from "./Components";
 
-const ProgressBar = () =>{
+type ProgressBar = {
+    bkgColor: boolean;    
+}
 
-    type ProgressBar = {
-        bkgColor: boolean;    
-    }
+type FragmentIndex = {
+    progressBar: number;
+}
 
-
-    const progressBarFragmentsStatus: ProgressBar[] = [
-        {
-            bkgColor: true
-        },
-        {
-            bkgColor: true
-        },
-        {
-            bkgColor: true
-        },
-        {
-            bkgColor: false
-        },
-        {
-            bkgColor: false
-        }
-    ] 
+const ProgressBar = ({progressBar}: FragmentIndex) =>{
 
     return(
     <>
         <ProgressBarContainer> 
 
-            {progressBarFragmentsStatus.map((item: ProgressBar, index: number) => {
+            {progressBar.map((item: ProgressBar, index: number) => {
                 return <ProgressBarFragment indexOf={index} bkgColor={item.bkgColor}/>    
             })}
             

@@ -1,22 +1,23 @@
-import { useState } from "react";
-import { MainContainer, PhoneContainer } from "../../GeneralStyle";
-import { Button, ButtonContainer, QuestionArea, TextContainer, TextSection } from "./QuestionStyle";
+import { MainContainer, PhoneContainer } from "../../GeneralStyle"
+import HelpIcon from "../../layouts/HelpIcon";
+import ProgressBar from "../../layouts/ProgressBar";
+import { ContentContainer, OptionsContainer, OptionSelector, PageHeader, QuestionContainer } from "./QuestionStyle";
 
-const Question = () =>{
+const Question = () => {
 
-    const [index, setIndexValue] = useState(0);
-    const storyContent = [
+    type Options = {
+        questionText: string;
+        questionOptions: string[];
+        correctIndex: number;
+    }
+
+    const progressCombination = [false, false, false, false, false];
+    
+    const options: Options[] = [
         {
-            pageText: '1 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit consectetur dignissimos, numquam a earum sunt ipsa, consequatur voluptatum est voluptas veritatis totam sequi. Nesciunt sunt amet, velit quod nobis ipsam.',
-        },
-        {
-            pageText: '2 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit consectetur dignissimos, numquam a earum sunt ipsa, consequatur voluptatum est voluptas veritatis totam sequi. Nesciunt sunt amet, velit quod nobis ipsam.',
-        },
-        {
-            pageText: '3 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit consectetur dignissimos, numquam a earum sunt ipsa, consequatur voluptatum est voluptas veritatis totam sequi. Nesciunt sunt amet, velit quod nobis ipsam.',
-        },
-        {
-            pageText: '4 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit consectetur dignissimos, numquam a earum sunt ipsa, consequatur voluptatum est voluptas veritatis totam sequi. Nesciunt sunt amet, velit quod nobis ipsam.',
+            questionText: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum reprehenderit libero sunt ratione nobis tenetur debitis voluptatum ullam sapiente consequuntur nemo minus sint, corrupti, sed, cum in tempora omnis eveniet.',
+            questionOptions: ['A', 'B', 'C', 'D'],
+            correctIndex: 2
         }
     ]
 
@@ -25,22 +26,24 @@ const Question = () =>{
     <>
         <MainContainer>
             <PhoneContainer>
-                <QuestionArea>
-                    <TextContainer>
-                        <TextSection>
-                            {storyContent[index].pageText}
-                        </TextSection>
-                    </TextContainer>
-                    {index}
-                    <ButtonContainer>
-                    <Button active={(index == 0)? false : true} onClick={() => setIndexValue(index - 1)}>
-                        Back
-                    </Button>
-                    <Button active={(index == storyContent.length - 1)? false : true} onClick={() => setIndexValue(index + 1)}>
-                        Next
-                    </Button>
-                    </ButtonContainer>
-                </QuestionArea>
+                <QuestionContainer>
+                    <PageHeader>
+                        <HelpIcon />
+                        <ProgressBar progressBar={progressCombination}/>
+                    </PageHeader>
+
+                   <ContentContainer>
+                        {options[0].questionText}
+                   </ContentContainer>
+
+                   <OptionsContainer>
+                        
+                        {options[0].questionOptions.map((item: string) => {
+                            return <OptionSelector> {item} </OptionSelector>       
+                        })}
+                        
+                   </OptionsContainer>
+                </QuestionContainer>
             </PhoneContainer>
         </MainContainer>
     </>
