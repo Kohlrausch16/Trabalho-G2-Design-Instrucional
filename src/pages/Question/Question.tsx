@@ -13,9 +13,6 @@ const Question = () => {
         correctIndex: number;
     }
 
-
-    // useLocation
-
     const options: Options[] = [
         {
             questionText: '1 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum reprehenderit libero sunt ratione nobis tenetur debitis voluptatum ullam sapiente consequuntur nemo minus sint, corrupti, sed, cum in tempora omnis eveniet.',

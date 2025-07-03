@@ -1,10 +1,13 @@
 import { useState } from "react";
 import { MainContainer, PhoneContainer } from "../../GeneralStyle";
 import { Button, ButtonContainer, StoryArea, TextContainer, TextSection } from "./StoryStyle";
+import { useNavigate } from "react-router";
 
 const Story = () =>{
 
     const [index, setIndexValue] = useState(0);
+    const navigate = useNavigate();
+
     const storyContent = [
         {
             pageText: '1 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit consectetur dignissimos, numquam a earum sunt ipsa, consequatur voluptatum est voluptas veritatis totam sequi. Nesciunt sunt amet, velit quod nobis ipsam.',
@@ -18,7 +21,14 @@ const Story = () =>{
         {
             pageText: '4 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit consectetur dignissimos, numquam a earum sunt ipsa, consequatur voluptatum est voluptas veritatis totam sequi. Nesciunt sunt amet, velit quod nobis ipsam.',
         }
-    ]
+    ];
+
+    function nextPage(){
+        setIndexValue(index + 1);
+        if(index == 3){
+            navigate("/question");
+        }
+    }
 
 
     return(
@@ -37,7 +47,7 @@ const Story = () =>{
                         Back
                     </Button>
 
-                    <Button active={(index == storyContent.length - 1)? false : true} disabled={(index == storyContent.length - 1)? true : false} onClick={() => setIndexValue(index + 1)}>
+                    <Button active={true} disabled={false} onClick={() => nextPage()}>
                         Next
                     </Button>
                     
