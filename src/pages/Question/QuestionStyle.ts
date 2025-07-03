@@ -23,10 +23,10 @@ export const ContentContainer = styled.div`
     flex: 12;
     font-family: 'Montserrat';
     font-weight: normal;
-    font-size: 0.7dvw;
+    font-size: 1.5dvh;
     padding: 5% 0%;
     text-align: center;
-    color: hsla(272, 51.10%, 44.90%);
+    color: rgba(36, 71, 84, 0.75);
 `;
 
 export const OptionsContainer = styled.div`
@@ -44,7 +44,7 @@ export const OptionSelector = styled.a`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: hsla(272, 51.10%, 44.90%, 0.73);
+    background-color:rgba(36, 71, 84, 0.75);
     color: white;
     border-radius: 5px;
     font-family: 'Montserrat';
@@ -53,6 +53,6 @@ export const OptionSelector = styled.a`
 
     &:hover{
         cursor: pointer;
-        background-color: hsla(272, 51.10%, 44.90%);
+        background-color: #244754;
     }
 `;

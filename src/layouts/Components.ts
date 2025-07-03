@@ -5,6 +5,10 @@ interface ProgressBarFragmentProps{
     bkgColor: boolean;
 }
 
+type HelpSectionDisplay = {
+    displayConfig: boolean;
+}
+
 export const ProgressBarContainer = styled.div`
     display: flex;
     justify-content: space-around;
@@ -17,8 +21,8 @@ export const ProgressBarContainer = styled.div`
 export const ProgressBarFragment = styled.div<ProgressBarFragmentProps>`
     height: 80%;
     flex: 1;
-    border: 1px solid hsla(272, 51.10%, 44.90%, 0.73);
-    background-color: ${props => (props.bkgColor) ? 'hsla(272, 51.10%, 44.90%, 0.73)' : 'transparent'};
+    border: 1px solid rgba(36, 71, 84, 0.75);
+    background-color: ${props => (props.bkgColor) ? 'rgba(36, 71, 84, 0.75)' : 'transparent'};
     border-top-left-radius: ${props => (props.indexOf == 0) ? '15px' : '0px'};
     border-bottom-left-radius: ${props => (props.indexOf == 0) ? '15px' : '0px'};
     border-top-right-radius: ${props => (props.indexOf == 4) ? '15px' : '0px'};
@@ -31,7 +35,7 @@ export const HelpIconContainer = styled.div`
     align-items: center;
     width: 35px;
     height: 35px;
-    background-color: hsla(272, 51.10%, 44.90%, 0.73);
+    background-color: rgba(36, 71, 84, 0.75);
     color: white;
     border-radius: 50px;
     font-family: 'Montserrat';
@@ -40,6 +44,29 @@ export const HelpIconContainer = styled.div`
 
     &:hover{
         cursor: pointer;
-        background-color: hsla(272, 51.10%, 44.90%);
+        background-color: rgba(36, 71, 84, 0.96);
     }
+`;
+
+export const HelpContainer = styled.div<HelpSectionDisplay>`
+    display: ${props => (props.displayConfig)? 'flex': 'hidden'};
+    position: absolute;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 95%;
+    background-color: rgba(36, 71, 84, 0.75);
+    border-radius: 12px;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    color: #e8e8e9;
+    font-size: 3dvh;
+`;
+
+export const CloseHelpButton = styled.button`
+    position: inherit;
+    z-index: 11;
+    display: flex;
 `;

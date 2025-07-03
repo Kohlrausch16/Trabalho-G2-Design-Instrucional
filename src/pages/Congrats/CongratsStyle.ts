@@ -7,7 +7,7 @@ export const CongratsContainer = styled.div`
     align-items: center;
     width: 95%;
     height: 95%;
-    background-color: rgba(118, 56, 173, 0.73);
+    background-color: rgba(36, 71, 84, 0.75);
     border-radius: 12px;
     font-family: 'Montserrat';
     font-weight: normal;

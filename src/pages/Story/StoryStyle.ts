@@ -13,12 +13,13 @@ export const StoryArea = styled.div`
     height: 100%;
 `;
 
+
 export const TextContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 4;
-    background-image: linear-gradient(to bottom, rgba(118, 56, 173, 0.73) 0%, transparent 40%);
+    background-image: linear-gradient(to bottom,rgba(36, 71, 84, 0.75) 0%, transparent 40%);
 `;
 
 export const TextSection = styled.div`
@@ -31,7 +32,7 @@ export const TextSection = styled.div`
     height: 35%;
     font-family: 'Montserrat';
     font-weight: normal;
-    font-size: 0.7dvw;
+    font-size: 1.5dvh;
     color: white;
 `;
 
@@ -54,10 +55,10 @@ export const Button = styled.button<ButtonActionProps>`
     align-items: center;
     background-color: ${props => (props.active) ? 'transparent' : 'transparent'};
     border: 1px solid transparent;
-    color: ${props => (props.active) ? 'hsla(272, 51.10%, 44.90%, 0.73)' : 'grey'};
+    color: ${props => (props.active) ? 'rgba(36, 71, 84, 0.75)' : 'grey'};
 
     &:hover{
         cursor: ${props => (props.active) ? 'pointer' : 'not-allowed'};
-        border: ${props => (props.active) ? '1px solid hsla(272, 51.10%, 44.90%, 0.73)' : '1px solid transparent'};
+        border: ${props => (props.active) ? '1px solid rgba(36, 71, 84, 0.75)' : '1px solid transparent'};
     }
 `;

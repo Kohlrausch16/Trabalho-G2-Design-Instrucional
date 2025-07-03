@@ -17,8 +17,8 @@ const Home = () =>{
                         <HomeSquareShape height={65} />
                         <HomeSquareShape height={58} />
                         <HomeSquareShape height={51} />
-                        <ButtonContainer href="/level-selector">
-                            <StartButton>Start!</StartButton>
+                        <ButtonContainer>
+                            <StartButton href="/level-selector">Começar</StartButton>
                         </ButtonContainer>
                     </SquareShapeContainer>
                 </HomeArea>

@@ -25,32 +25,52 @@ export const HomeSquareShape = styled.div<SquareProps>`
     align-self: flex-end;
     width: 100%;
     height: ${props => `${props.height}%`};
-    background-color:rgba(118, 56, 173, 0.39);
+    background-color:rgba(36, 71, 84, 0.43);
     border-radius: 15px;
 `;
 
-export const ButtonContainer = styled.a`
+export const ButtonContainer = styled.div`
+    display: flex;
+    justify-content: center;
     position: absolute;
     z-index: 2;
-    
+    width: 100%;
+    height: 65%;
 `;
 
-export const StartButton = styled.button`
+export const StartButton = styled.a`
+    background-color: white;
+    padding: 4% 12%;
     align-self: flex-end;
-    width: 40%;
-    margin-left: 30%;
-    margin-bottom: 25%;
-    height: 6%;
     border-radius: 50px;
     font-size: 15px;
     border: none;
-    color:rgba(118, 56, 173, 0.73);
+    color: #244754;
     font-family: 'Montserrat';
     font-weight: normal;
     transition: 0.5s;
+    backgorund-color: red;
+    margin-bottom: 5%;
+    text-decoration: none;
+
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.03);
+    }
+`;
+
+/*
+    border-radius: 50px;
+    font-size: 15px;
+    border: none;
+    color: #244754;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    transition: 0.5s;
+    backgorund-color: red;
 
     &:hover{
         cursor: pointer;
         transform: scale(1.05);
     }
-`;
+*/

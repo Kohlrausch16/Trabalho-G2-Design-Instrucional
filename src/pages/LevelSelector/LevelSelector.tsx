@@ -14,7 +14,7 @@ const LevelSelector = () =>{
         </TitleContainer>
 
         <LevelSelectorContainer>
-            <LevelSelectorCard href="/story" borderColor="hsla(272, 51.10%, 44.90%, 0.73)">
+            <LevelSelectorCard href="/story" borderColor="rgba(36, 71, 84, 0.69)">
               <CardImage src={foto}/>
               <GradientSection />
               <CardTitle>Grécia</CardTitle>

@@ -4,6 +4,7 @@ import HelpIcon from "../../layouts/HelpIcon";
 import ProgressBar from "../../layouts/ProgressBar";
 import { ContentContainer, OptionsContainer, OptionSelector, PageHeader, QuestionContainer } from "./QuestionStyle";
 import { useNavigate } from "react-router";
+import HelpSection from "../../layouts/HelpSection";
 
 const Question = () => {
 
@@ -42,6 +43,8 @@ const Question = () => {
     ];
 
     const [optionsIndex, setOptionsIndex] = useState(0);
+    const [showHelp, setShowHelp] = useState(false);
+
     let navigate = useNavigate();
 
     function setNavigate(){
@@ -54,8 +57,6 @@ const Question = () => {
         if(options[optionsIndex].correctIndex == (index + 1)){
             setOptionsIndex(optionsIndex + 1);
             setNavigate();
-        } else {
-            alert('Resposta errada :(; Sequência: B - D - A - A - C');
         }
     }
 
@@ -65,6 +66,7 @@ const Question = () => {
         <MainContainer>
             <PhoneContainer>
                 <QuestionContainer>
+                    {/*<HelpSection displayConfig={showHelp} />*/}
                     <PageHeader>
                         <HelpIcon />
                         <ProgressBar progressBar={optionsIndex}/>
@@ -75,7 +77,6 @@ const Question = () => {
                    </ContentContainer>
 
                    <OptionsContainer>
-                        
                         {options[optionsIndex].questionOptions.map((item: string, index: number) => {
                             return <OptionSelector onClick={() => verifyAnswer(index)} > {item} </OptionSelector>       
                         })}
