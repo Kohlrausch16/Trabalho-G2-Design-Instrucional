@@ -1,13 +1,85 @@
 História
-  Olá ***Jogador*** você está pronto para o teste de número 1 ? Te desejo boa sorte no passado e lembre-se  use apenas os conhecimentos predefinidos para concluir suas missões, não podemos interferir
-  demais na linha do tempo, o seu chip neural irá te guiar na sua missão e te ajudar se você estiver tendo problemas com suas missões, mas você não vai precisar disso não é. (Personagem guia) ---  (Imagem máquina do tempo)
+Olá XXXX, você está pronto para o teste de número 1? Te desejo boa sorte no passado e lembre-se: use apenas os conhecimentos predefinidos para concluir suas missões. Não podemos interferir
+mais que o esperado na linha do tempo. O seu chip neural irá te guiar na sua missão e te ajudar se você estiver tendo problemas, mas você não vai precisar disso, não é? (Personagem guia) --- (Imagem máquina do tempo)
 
-1 (Geometria) - Roma
-    O Imperador Julio César
-  
+Chip Neural iniciado
+Ano 331 a.C - Localização Alexandria - Egito
+1 Você está no corpo de um arquiteto vindo do oriente para a cidade de Alexandria.
+Você acorda e percebe que está ajoelhado. À sua frente um homem fala:
+Erga sua cabeça, arquiteto, eu tenho uma missão para você. Nos meus sonhos eu tive visões sobre uma cidade que nunca será esquecida, e que eu deveria fundá-la. E VOCÊ IRÁ FAZER PARTE DISSO!!!
+Prove seu valor projetando uma praça em homenagem a Ísis. Desejo uma praça perfeita, com oito lados iguais, para a homenagem à Deusa. Os sacerdotes egípcios dizem que o número da Deusa é 2500,
+então essa praça deverá ter exatos 2500 m². Essa praça será fechada e quero que sua porta principal esteja alinhada com a estrela Sírius. No centro da praça haverá um templo circular
+perfeitamente inscrito em um quadrado que por sua vez estará inscrito no octógono. E por fim, você já deve ter percebido que nosso farol está ao norte de onde será a construção da praça.
+Você deve fazer com que no dia do solstício de verão, ao meio-dia, a luz do sol encoste no interior da praça. Eu irei de tempos em tempos observar o andamento da construção. Isso é tudo, pode se retirar.
 
+Questão 1
+CHIP NEURAL
+Vamos descobrir se a sombra do farol irá alcançar a praça onde ela está projetada. O farol de Alexandria está ao norte da praça, a 120 metros de distância. Ele tem aproximadamente 100 metros de altura. Você precisa fazer com que no solstício de verão, ao meio-dia, quando o sol estiver na altitude de 78 graus, a sombra do farol toque o interior da praça.
+Qual o comprimento aproximado da sombra do farol ao meio-dia?
 
-3
+Alternativas:
+A - 32,45m
+B - 45,67m
+C - 21,10m
+D - 120,00m
 
+Resposta correta: C - 21,10m
 
-4
+Dica: Você está realmente pedindo uma dica na primeira questão??? Para saber se a sombra do farol vai alcançar a praça, imagine um triângulo formado pelo farol, o solo e a sombra projetada.
+Você pode usar o ângulo do sol ao meio-dia no solstício e a altura do farol para calcular o comprimento da sombra no chão. Lembre-se de dividir a altura do farol pela tangente do ângulo.
+
+Questão 2
+CHIP NEURAL
+Vamos iniciar a construção desse projeto. A primeira coisa que você deve fazer é calcular o comprimento de cada lado do octógono. Lembre-se que a área total é de 2500 metros quadrados.
+
+Alternativas:
+A - 14,72m
+B - 16,19m
+C - 18,03m
+D - 20,50m
+
+Resposta correta: B - 16,19m
+
+Dica: Eu esperava que você iria conseguir resolver sozinho essa questão simples. Você deseja saber o tamanho de cada lado. Imagine que a área depende do tamanho do lado, quanto maior o lado, maior a área,
+então use a fórmula da área de um octógono regular, e como você já sabe a área, use essa fórmula para descobrir o lado, invertendo a fórmula para descobrir o lado.
+
+Questão 3
+CHIP NEURAL
+Antes dos construtores erguerem os muros, você deverá calcular o ponto da porta principal alinhada para o nascimento de Sírius, a 45 graus nordeste. Você deve determinar a posição
+da porta principal com base nesse ângulo.
+
+Alternativas:
+A - 17,20m; 12,75m
+B - 14,96m; 14,96m
+C - 21,15m; 0,00m
+D - 10,00m; 24,90m
+
+Resposta correta: B - 14,96m; 14,96m.
+
+Dica: Você realmente precisa de ajuda? É, se você está aqui, acredito que sim. Então vamos lá.
+Imagine um círculo em torno da praça e localize o ponto que está exatamente a 45 graus a partir do centro. Para isso, use o raio do octógono e então calcule as coordenadas da porta com:
+x = Raio x cosseno de 45 graus
+y = Raio x seno de 45 graus
+
+Questão 4
+CHIP NEURAL
+Agora o próximo passo é construir o templo circular no centro da praça. Lembre-se que ele deve estar dentro de um quadrado, e esse quadrado dentro da praça. Descubra o tamanho máximo do templo.
+
+Alternativas:
+A - 25,00m
+B - 30,00m
+C - 38,91m
+D - 43,12m
+
+Resposta correta: D - 43,12m
+
+Dica: Com seu conhecimento do futuro, você deveria saber resolver pelo menos isso, não acha? Pense nos seguintes pontos:
+O templo será circular e ficará no centro da praça. Ele será construído dentro de um quadrado que também fica no centro da praça. Esse quadrado precisa caber dentro do octógono, sem ultrapassar nenhum dos lados.
+A maior distância possível entre dois lados opostos do octógono é usada para definir o lado do quadrado, e esse valor também será o diâmetro do círculo, já que o círculo estará inscrito dentro do quadrado.
+Encontre a distância e multiplique pelo lado do octógono. Fácil, não é mesmo?
+
+APÓS A CONCLUSÃO
+
+Ao finalizar os projetos, o mesmo homen que fez o pedido paara você aparece com vários homens em sua volta.
+Muito bem, você realmente consguiu terminar esse prohjeto, e fez isso com muita velocidade, estou muito satisfeito com você!!A partir de hoje você estará sob minha proteção e pode ter certeza que ninguém em lugar
+nehum do mundo irá ousar desrespeitar um homem de Alexandre O Grande
