@@ -3,6 +3,7 @@ import { MainContainer, PhoneContainer } from "../../GeneralStyle"
 import HelpIcon from "../../layouts/HelpIcon";
 import ProgressBar from "../../layouts/ProgressBar";
 import { ContentContainer, OptionsContainer, OptionSelector, PageHeader, QuestionContainer } from "./QuestionStyle";
+import { useNavigate } from "react-router";
 
 const Question = () => {
 
@@ -11,6 +12,9 @@ const Question = () => {
         questionOptions: string[];
         correctIndex: number;
     }
+
+
+    // useLocation
 
     const options: Options[] = [
         {
@@ -41,14 +45,23 @@ const Question = () => {
     ];
 
     const [optionsIndex, setOptionsIndex] = useState(0);
+    let navigate = useNavigate();
+
+    function setNavigate(){
+        if(optionsIndex == 4){
+            navigate("/congrats");
+        }
+    }
 
     function verifyAnswer(index: number){
         if(options[optionsIndex].correctIndex == (index + 1)){
             setOptionsIndex(optionsIndex + 1);
+            setNavigate();
         } else {
-            alert('Resposta errada :(; Sequência: B - A - D - D - C');
+            alert('Resposta errada :(; Sequência: B - D - A - A - C');
         }
     }
+
 
     return(
     <>
