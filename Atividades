@@ -3,7 +3,7 @@ Olá XXXX, você está pronto para o teste número 1? Te desejo boa sorte no pas
 
 Chip Neural iniciado
 Ano 331 a.C. — Localização: Alexandria, Egito
-1 Você está no corpo de um arquiteto vindo do Oriente para a cidade de Alexandria.
+Você está no corpo de um arquiteto vindo do Oriente para a cidade de Alexandria.
 Você acorda e percebe que está ajoelhado. À sua frente, um homem fala:
 
 Erga a cabeça, arquiteto, eu tenho uma missão para você.
@@ -11,8 +11,7 @@ Em meus sonhos, tive visões sobre uma cidade que nunca será esquecida, e que e
 Prove seu valor projetando uma praça em homenagem a Ísis. Desejo uma praça perfeita, com oito lados iguais, em honra à Deusa.
 Os sacerdotes egípcios dizem que o número da Deusa é 2500, então essa praça deverá ter exatamente 2500 m².
 
-Essa praça será fechada, e quero que sua porta principal esteja alinhada com a estrela Sírius.
-No centro da praça haverá um templo circular, perfeitamente inscrito em um quadrado que, por sua vez, estará inscrito no octógono.
+Essa praça será fechada, e quero que sua porta principal esteja alinhada com a estrela Sírius. No centro da praça haverá um templo circular, perfeitamente inscrito em um quadrado que, por sua vez, estará inscrito no octógono.
 
 E por fim, você já deve ter percebido que nosso farol está ao norte do local onde será construída a praça.
 Você deve garantir que, no dia do solstício de verão, ao meio-dia, a luz do sol toque o interior da praça.
@@ -121,3 +120,24 @@ APÓS A CONCLUSÃO
 
 Muito bem! Você realmente conseguiu terminar esse projeto — e o fez com muita rapidez. Estou muito satisfeito com você!
 A partir de hoje, você estará sob minha proteção. Pode ter certeza de que ninguém, em lugar nenhum do mundo, ousará desrespeitar um homem de Alexandre, O Grande.
+
+=========================================================================================
+
+Questão 5
+CHIP NEURAL
+Falta pouco, arquiteto. Você precisa alinhar a porta do templo com o nascer do sol no equinócio de outono.
+Segundo os registros dos astrônomos, nesse dia o sol nasce exatamente a leste.
+
+Sabendo que a praça está alinhada com os pontos cardeais, em que direção a porta do templo deve estar voltada?
+
+Alternativas:
+A - 0°
+B - 90°
+C - 135°
+D - 180°
+
+Resposta correta: B - 90°
+
+Dica:
+Use os pontos cardeais como referência: norte = 0°, leste = 90°, sul = 180°, oeste = 270°.
+No equinócio, o sol nasce exatamente a leste.

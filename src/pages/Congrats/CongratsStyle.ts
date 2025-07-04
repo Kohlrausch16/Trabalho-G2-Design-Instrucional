@@ -12,5 +12,10 @@ export const CongratsContainer = styled.div`
     font-family: 'Montserrat';
     font-weight: normal;
     color: #e8e8e9;
-    font-size: 3dvh;
+    font-size: 2dvh;
+`;
+
+export const CongratsText = styled.div`
+    width: 90%;
+    text-align: center;
 `;
