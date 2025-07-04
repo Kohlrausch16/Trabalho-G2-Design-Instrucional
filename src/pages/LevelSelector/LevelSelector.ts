@@ -49,8 +49,8 @@ export const CardTitle = styled.h1`
   font-family: 'Montserrat';
   font-weight: normal;
   color:#244754;
-  font-size: 3dvh;
-  transform: translateX(50%);
+  font-size: 2.2dvh;
+  transform: translateX(-5%);
 `;
 
 export const CardImage = styled.img`

@@ -18,4 +18,5 @@ export const CongratsContainer = styled.div`
 export const CongratsText = styled.div`
     width: 90%;
     text-align: center;
+
 `;

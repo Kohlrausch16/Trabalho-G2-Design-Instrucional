@@ -8,8 +8,6 @@ type HelpDisplay = {
 const HelpSection = ({displayConfig}: HelpDisplay) =>{
 
   const [showHelp, setShowHelp] = useState(displayConfig); 
-
-
   return(
   <>
     <CloseHelpButton onClick={() => setShowHelp(false)}> a </CloseHelpButton>

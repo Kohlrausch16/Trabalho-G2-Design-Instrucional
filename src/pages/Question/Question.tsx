@@ -4,6 +4,7 @@ import HelpIcon from "../../layouts/HelpIcon";
 import ProgressBar from "../../layouts/ProgressBar";
 import { ContentContainer, OptionsContainer, OptionSelector, PageHeader, QuestionContainer } from "./QuestionStyle";
 import { useNavigate } from "react-router";
+import HelpSection from "../../layouts/HelpSection";
 
 const Question = () => {
 
@@ -60,11 +61,10 @@ const Question = () => {
     }
 
     return(
-    <>
+    <> 
         <MainContainer>
             <PhoneContainer>
                 <QuestionContainer>
-                    {/*<HelpSection displayConfig={showHelp} />*/}
                     <PageHeader>
                         <HelpIcon />
                         <ProgressBar progressBar={optionsIndex}/>

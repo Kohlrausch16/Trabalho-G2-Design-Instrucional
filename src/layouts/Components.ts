@@ -49,7 +49,7 @@ export const HelpIconContainer = styled.div`
 `;
 
 export const HelpContainer = styled.div<HelpSectionDisplay>`
-    display: ${props => (props.displayConfig)? 'flex': 'hidden'};
+    display: ${props => (props.displayConfig == true) ? 'flex': 'hidden'};
     position: absolute;
     z-index: 10;
     flex-direction: column;

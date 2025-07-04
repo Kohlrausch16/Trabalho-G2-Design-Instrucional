@@ -39,7 +39,7 @@ export const TitleContainer = styled.div<GeneralDataProps>`
     align-items: center;
     width: 100%;
     flex: 1;
-    font-size: ${props => `${props.fontSize}dvh`}
+    font-size: ${props => `${props.fontSize} dvh`};
 `;
 
 export const Title = styled.h1`

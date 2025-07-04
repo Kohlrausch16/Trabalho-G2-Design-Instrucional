@@ -1,6 +1,6 @@
 import { MainContainer, PhoneContainer, TitleContainer, Title } from "../../GeneralStyle";
 import { LevelSelectorCard, LevelSelectorContainer, GradientSection, CardTitle, CardImage } from "./LevelSelector";
-import foto from '../../assets/images/bom_de_guera.png';
+import foto from '../../assets/images/alexandria.png';
 import '../../main.css';
 
 const LevelSelector = () =>{
@@ -17,7 +17,7 @@ const LevelSelector = () =>{
             <LevelSelectorCard href="/story" borderColor="rgba(36, 71, 84, 0.69)">
               <CardImage src={foto}/>
               <GradientSection />
-              <CardTitle>Egito</CardTitle>
+              <CardTitle>ALEXANDRIA</CardTitle>
             </LevelSelectorCard>
 
         </LevelSelectorContainer>
