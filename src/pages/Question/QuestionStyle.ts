@@ -15,17 +15,17 @@ export const PageHeader = styled.div`
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    flex: 1;
+    flex: 1; 
 `;
 
 export const ContentContainer = styled.div`
     width: 80%;
-    flex: 12;
     font-family: 'Montserrat';
     font-weight: normal;
     font-size: 1.5dvh;
     padding: 5% 0%;
     text-align: center;
+    flex: 3; 
     color: rgba(36, 71, 84, 0.75);
 `;
 
@@ -35,9 +35,38 @@ export const OptionsContainer = styled.div`
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
     width: 60%;
+    padding: 5% 0% 0% 0%;
     flex: 3.5;
     gap: 5px;
 `;
+
+
+export const BackgroundImageContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 95%;
+    flex: 6.5;
+    border-radius: 15px;
+    border: 1px solid rgba(36, 71, 84, 0.75);
+`;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export const OptionSelector = styled.a`
     grid: 1;
@@ -55,4 +84,9 @@ export const OptionSelector = styled.a`
         cursor: pointer;
         background-color: #244754;
     }
+`;
+
+export const SectionImage = styled.img`
+    height: 100%;
+    object-fit: cover;
 `;
