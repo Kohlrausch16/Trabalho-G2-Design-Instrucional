@@ -18,7 +18,7 @@ const Story = () =>{
             picturePath: '/story-2.png'
         },
         {
-            pageText: 'Erga a cabeça, arquiteto, eu tenho uma missão para ti. Em meus sonhos, tive visões sobre uma cidade que nunca será esquecida, e que eu deveria fundá-la. E tu FARÁ PARTE DISSO!!! Prove seu valor projetando uma praça em homenagem a Ísis. Desejo uma praça perfeita, com oito lados iguais, em honra à Deusa. Os sacerdotes egípcios izem que o número da Deusa é 2500, então essa praça deverá ter exatamente 2500 m².',
+            pageText: 'Erga a cabeça, arquiteto, eu tenho uma missão para ti. Em meus sonhos, tive visões sobre uma cidade que nunca será esquecida, e que eu deveria fundá-la. E tu FARÁ PARTE DISSO!!! Prove seu valor projetando uma praça em homenagem a Ísis. Desejo uma praça perfeita, com oito lados iguais, em honra à Deusa. Os sacerdotes egípcios dizem que o número da Deusa é 2500, então essa praça deverá ter exatamente 2500 m².',
             picturePath: '/story-3.png'
         },
         {

@@ -19,10 +19,10 @@ export const PageHeader = styled.div`
 `;
 
 export const ContentContainer = styled.div`
-    width: 80%;
+    width: 90%;
     font-family: 'Montserrat';
     font-weight: normal;
-    font-size: 1.5dvh;
+    font-size: 1.2dvh;
     padding: 5% 0%;
     text-align: center;
     flex: 3; 
