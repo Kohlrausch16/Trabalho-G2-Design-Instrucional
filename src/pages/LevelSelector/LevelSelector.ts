@@ -50,7 +50,7 @@ export const CardTitle = styled.h1`
   font-weight: normal;
   color:#244754;
   font-size: 2.2dvh;
-  transform: translateX(-5%);
+  transform: translateX(-25px);
 `;
 
 export const CardImage = styled.img`
