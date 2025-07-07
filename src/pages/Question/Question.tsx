@@ -49,7 +49,6 @@ const Question = () => {
     ];
 
     const [optionsIndex, setOptionsIndex] = useState(0);
-    const [showHelp, setShowHelp] = useState(false);
 
     let navigate = useNavigate();
 
