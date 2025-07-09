@@ -9,7 +9,7 @@ const Home = () =>{
             <PhoneContainer>
                 <HomeArea>
                     <TitleContainer fontSize={2}>
-                        <Title>NOME DO JOGO</Title>
+                        <Title>TIME TO MATH</Title>
                     </TitleContainer>
                     
                     <SquareShapeContainer>

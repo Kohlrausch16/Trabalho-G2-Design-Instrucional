@@ -12,7 +12,7 @@ const Congrats = () =>{
                         Muito bem! Você realmente conseguiu terminar esse projeto — e o fez com muita rapidez. Estou muito satisfeito com você! A partir de hoje, você estará sob minha proteção. Pode ter certeza de que ninguém, em lugar nenhum do mundo, ousará desrespeitar um homem de Alexandre, O Grande.
                     </CongratsText>
                     <ButtonContainer>
-                        <StartButton href="/">Retonar ao menu</StartButton>
+                        <StartButton href="/level-selector">Retonar ao menu</StartButton>
                     </ButtonContainer>
                 </CongratsContainer>
             </PhoneContainer>
